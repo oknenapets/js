@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Смартфоны</title>
+</head>
+
+<body>
+  <main class="main">
+    <form class="filter-form">
+      <div class="ui-collapse">
+        <div class="ui-collapse__title">
+          <span class="ui-arrow">
+            <span></span>
+            <span></span>
+          </span>
+          <span class="ui-collapse__name">Цена</span>
+        </div>
+        <div class="ui-collapse__body">
+          <label class="ui-checkbox ">
+            <span>Менее 4 000 ₽</span>
+            <input name='price' data-value="price_less_than_4000" type="checkbox" class="ui-checkbox__input">
+            <span class="ui-checkbox__box"></span>
+          </label>
+          <label class="ui-checkbox ">
+            <span>4 001 - 10 000 ₽</span>
+            <input name='price' data-value="price_between_4001_10000" type="checkbox" class="ui-checkbox__input">
+            <span class="ui-checkbox__box"></span>
+          </label>
+          <label class="ui-checkbox ">
+            <span>10 001 - 15 000 ₽</span>
+            <input name='price' data-value='price_between_10001_15000' type="checkbox" class="ui-checkbox__input">
+            <span class="ui-checkbox__box"></span>
+          </label>
+          <label class="ui-checkbox ">
+            <span>15 001 - 20 000 ₽</span>
+            <input name='price' data-value='price_between_15001_20000' type="checkbox" class="ui-checkbox__input">
+            <span class="ui-checkbox__box"></span>
+          </label>
+        </div>
+      </div>
+      <div class="ui-collapse">
+        <div class="ui-collapse__title">
+          <span class="ui-arrow"><span></span><span></span></span>
+          <span class="ui-collapse__name">Производитель</span>
+        </div>
+        <div class="ui-collapse__body">
+          <label class="ui-checkbox ">
+            <span>Samsung</span>
+            <input name='brand' data-value="Samsung" type="checkbox" class="ui-checkbox__input">
+            <span class="ui-checkbox__box"></span>
+          </label>
+          <label class="ui-checkbox ">
+            <span>Apple</span>
+            <input name='brand' data-value="Apple" type="checkbox" class="ui-checkbox__input">
+            <span class="ui-checkbox__box"></span>
+          </label>
+          <label class="ui-checkbox ">
+            <span>ASUS</span>
+            <input name='brand' data-value="ASUS" type="checkbox" class="ui-checkbox__input">
+            <span class="ui-checkbox__box"></span>
+          </label>
+          <label class="ui-checkbox ">
+            <span>OnePlus</span>
+            <input name='brand' data-value="OnePlus" type="checkbox" class="ui-checkbox__input">
+            <span class="ui-checkbox__box"></span>
+          </label>
+          <label class="ui-checkbox ">
+            <span>Google</span>
+            <input name='brand' data-value="Google" type="checkbox" class="ui-checkbox__input">
+            <span class="ui-checkbox__box"></span>
+          </label>
+          <label class="ui-checkbox ">
+            <span>Huawei</span>
+            <input name='brand' data-value="Huawei" type="checkbox" class="ui-checkbox__input">
+            <span class="ui-checkbox__box"></span>
+          </label>
+        </div>
+      </div>
+      <button class="ui-button filter-form__button" type="submit">Показать</button>
+    </form>
+    <div class="item-list">
+    </div>
+    <div style="display: flex; flex-direction: column;">
+      <button class="ui-button item-list__button" style="width: 100%; margin-bottom: 5px;">Добавить</button>
+      <button class="ui-button button-delete-all" style="width: 100%;">Удалить выбранные</button>
+    </div>
+  </main>
+</body>
+</html>

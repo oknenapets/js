@@ -1,0 +1,35 @@
+.ui-select {
+  &__options {
+    display: none;
+    overflow-y: scroll;
+    max-height: 350px;
+    &_active {
+      display: block;
+    }
+  }
+
+  &__input{
+    font-weight: 700;
+  }
+
+  &__option{
+    cursor: pointer;
+    margin-top: 5px;
+    padding: 5px;
+    border-radius: 8px;
+    border-radius: 8px;
+    background-color: #f2f2f2;
+    &:not(:last-child){
+      margin-bottom: 5px;
+    }
+    &:hover{
+      background-color: #e4e2e2;
+    }
+    &_selected{
+      background-color: #fc8507;
+      &:hover{
+        background-color: #fc8507;
+      }
+    }
+  }
+}
